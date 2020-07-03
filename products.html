@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
+        a {
+            text-decoration: none !important;
+        }
+
         .navbar-dark .navbar-toggler {
             border-color: rgba(255, 255, 255, 0.98) !important;
         }
@@ -23,94 +27,160 @@
 <body>
 
     <div class="container">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand" href="./index.html">C-Mart</a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+            <a class="navbar-brand" href="/">C-Mart</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item ">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="./products.html">
+                        <a class="nav-link" href="products.html">
                             Products <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./shops.html">Shops</a>
+                        <a class="nav-link" href="shops.html">Shops</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row m-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product1</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-                                amet!</p>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-1.jpg">
+                                <img class="pic-2" src="images/img-2.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>Men's Clothing</b></a></h3>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product2</h3>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae,
-                                error.</p>
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-3.jpg">
+                                <img class="pic-2" src="images/img-4.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <span class="product-discount-label">-20%</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>Women's clothing</b></a></h3>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product3</h3>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-                                explicabo.</p>
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-10.jpg">
+                                <img class="pic-2" src="images/img-9.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <span class="product-discount-label">-20%</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>HouseHold Things</b></a></h3>
+
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row m-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product1</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-                                amet!</p>
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-12.jpg">
+                                <img class="pic-2" src="images/img-11.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <span class="product-discount-label">-20%</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>Stationary</b></a></h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-16.jpg">
+                                <img class="pic-2" src="images/img-15.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>Hardwares</b></a></h3>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product2</h3>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae,
-                                error.</p>
+                <div class="col-md-3 col-lg-4 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/img-14.jpg">
+                                <img class="pic-2" src="images/img-13.jpg">
+                            </a>
+                            <span class="product-trend-label">Trend</span>
+                            <ul class="social">
+
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Product3</h3>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
-                                explicabo.</p>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#"><b>Vegetables and fruits</b></a></h3>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" style="padding-bottom: 0 !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">

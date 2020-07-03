@@ -15,11 +15,11 @@
 
   <style type="text/css">
     .navbar-dark .navbar-toggler {
-      border-color: rgba(0, 0, 0, 0.8) !important;
+      border-color: rgba(255, 255, 255, 1) !important;
     }
 
     .navbar {
-      z-index: 1000;
+      z-index: 11;
     }
 
     * {
@@ -48,8 +48,8 @@
       padding: 40px;
       position: absolute;
       left: 50%;
-      top: 35%;
-      transform: translate(-50%, -35%);
+      top: 30%;
+      transform: translate(-50%, -30%);
       text-transform: uppercase;
       border-radius: 20px 20px 30px 30px;
       z-index: 10;
@@ -125,13 +125,13 @@
     }
 
     .product-price {
-      color: #7ed6df !important;
+      color: #7ed6df;
       font-size: 24px;
     }
 
     .product-button {
       margin-left: auto;
-      color: #7ed6df !important;
+      color: #7ed6df;
       text-decoration: none !important;
       border: 2px solid;
       padding: 8px 24px;
@@ -144,9 +144,6 @@
     }
 
     .footer-container {
-      max-width: 1300px;
-      margin: auto;
-      padding: 0 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -181,12 +178,10 @@
       }
 
       footer {
-        display: flex;
         width: 500px;
       }
 
       .footer-container {
-        width: 100%;
         justify-content: center;
       }
     }
@@ -196,7 +191,7 @@
 <body>
   <div class="container">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(153, 153, 153, 0.315);">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0, 0, 0, 0.7) !important;">
         <a class="navbar-brand" href="./index.html">C-Mart</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
           aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -205,11 +200,14 @@
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./products.html">Products</a>
+            <li class="nav-item active">
+              <a class="nav-link " href="./products.html">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./shops.html">Shops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Login</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">

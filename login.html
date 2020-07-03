@@ -6,60 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | C-Mart</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="./css/login.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
     * {
       margin: 0;
       padding: 0;
-      text-decoration: none;
-      font-family: montserrat;
-      box-sizing: border-box;
+      text-decoration: none !important;
+      box-sizing: border-box !important;
     }
 
     body {
-      min-height: 100vh;
-      background-image: linear-gradient(120deg, #3498db, #8e44ad);
+      background-image: linear-gradient(120deg, #888, #555) !important;
+    }
+
+    .button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: transparent;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .button i {
+      color: #e7e7e7 !important;
+      font-size: 24px;
+      transition: .2s all ease-out;
+    }
+
+    .button i:hover {
+      transform: scale(1.5);
     }
   </style>
 </head>
 
 <body>
-  <form action="index.html" class="login-form" method="POST">
-    <h1>Login</h1>
 
-    <div class="txtb">
-      <input type="text" required>
-      <span data-placeholder="Username"></span>
-    </div>
+  <div class="container-fluid">
+    <form action="index.html" class="login-form" method="POST">
+      <h1>Login</h1>
 
-    <div class="txtb">
-      <input type="password" required>
-      <span data-placeholder="Password"></span>
-    </div>
+      <div class="txtbtn">
+        <input type="text" required>
+        <span data-placeholder="Username"></span>
+      </div>
 
-    <input type="submit" class="logbtn" value="Login">
+      <div class="txtbtn">
+        <input type="password" required>
+        <span data-placeholder="Password"></span>
+      </div>
 
-    <div class="bottom-text">
-      Don't have account?
-      <a href="./signup.html" class="sigbtn">Sign up</a>
-    </div>
-    <hr color="#555" style="margin: 10px 0;">
-    <div class="login-google">
-      <h2>Login With Google</h2>
-      <i class="fab fa-google" aria-hidden="true"></i>
-      <a href="./lgoogle.html" class="lgobtn">Login</a>
-    </div>
+      <input type="submit" class="logbtn" value="Login">
 
-  </form>
+      <div class="bottom-text">
+        Don't have account?
+        <a href="signup.html" class="sigbtn">Sign up</a>
+      </div>
+
+      <hr color="#555" style="margin: 10px 20px;">
+
+      <div class="login-google">
+        <h2>Login with Google</h2>
+        <i class="fa fa-google" aria-hidden="true"></i>
+        <a href="lgoogle.html" class="sigbtn">Login</a>
+      </div>
+
+    </form>
+
+  </div>
+
+  <button class="button">
+    <a href="/">
+      <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+    </a>
+  </button>
 
   <script type="text/javascript">
-    $(".txtb input").on("focus", function () {
+    $(".txtbtn input").on("focus", function () {
       $(this).addClass("focus");
     });
 
-    $(".txtb input").on("blur", function () {
+    $(".txtbtn input").on("blur", function () {
       if ($(this).val() == "")
         $(this).removeClass("focus");
     });
