@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>C-Mart</title>
+    <title>IFOS</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts Roboto -->
@@ -16,20 +16,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
 
     <!-- Start your project here-->
-    <div class="w-100">
-        <div class="loader-container">
+    <div class="container">
+        <div class="loader-container container">
             <div class="loader"></div>
         </div>
-        <!-- This is the Template For C-Mart App/Website -->
+        <!-- This is the Template For IFOS App/Website -->
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.7) !important;">
+        <nav class="navbar navbar-expand-lg navbar-light white">
             <!-- Navbar brand -->
-            <a class="navbar-brand" href="/">C-Mart</a>
+            <a class="navbar-brand" href="/">IFOS</a>
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,16 +61,18 @@
                         <input class="form-control mr-sm-2" type="text" placeholder="Search Here" aria-label="Search">
 
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-default">Serach</button>
+                            <button type="button" class="btn btn-primary">Serach</button>
                         </span>
 
+                        <button type="button" class="btn white" onclick="dark();">Dark</button>
                     </div>
                 </form>
             </div>
             <!-- Collapsible content -->
         </nav>
         <!--/.Navbar-->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+        <div id="carouselExampleControls" class="carousel slide mt-2" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg"
@@ -93,6 +96,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
         <div class="container">
             <div class="row mt-3">
                 <div class="col-sm">
@@ -184,7 +188,7 @@
             </div>
         </div>
 
-        <footer class="page-footer font-small blue pt-4 mt-4" style="padding-bottom: 0 !important;">
+        <footer class="page-footer font-small pt-4 mt-4">
             <div class="container-fluid text-center text-md-left">
                 <div class="row">
                     <div class="col-md-6 mt-md-0 mt-3">
@@ -229,7 +233,7 @@
                 </div>
             </div>
             <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="#"> C-Mart</a>
+                <a href="#"> IFOS</a>
             </div>
         </footer>
     </div>
@@ -250,6 +254,11 @@
         $(window).on("load", function () {
             $(".loader-container").fadeOut(1000);
         });
+
+        function dark() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 </body>
 
